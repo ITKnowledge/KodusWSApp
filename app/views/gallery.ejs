@@ -1,0 +1,174 @@
+<% include header %>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10&appId=123281368333377";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div id="wrapper">
+<header id="header" class="tg-haslayout" data-spy="affix" data-offset-top="10">
+<div class="container">
+<strong class="logo">
+  <a href="/">
+    <img src="https://res.cloudinary.com/kbellioum/image/upload/v1497787353/kodus_xbdlh7.png" alt="kodus logo">
+  </a>
+</strong>
+<div class="navigation-area">
+  <nav id="nav">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="menu">
+        <li class="current-menu-item">
+          <a href="/#apropos">A propos</a>
+        </li>
+        <li >
+          <a href="/#realisations">Réalisations</a>
+        </li>
+        <!-- <li>
+          <a href="#galerie">Galerie</a>
+        </li> -->
+        <li>
+          <a href="/#references">Références</a>
+        </li>
+        <li>
+          <a href="/#contact">Contact</a>
+        </li>
+        <li>
+          <a href="/gallery">Gallery</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</div>
+</header>
+
+<h1>Gallery projets</h1>
+
+<div id="gallery" style="display:none;">
+
+<a href="http://unitegallery.net">
+<img alt="Image 1 Title"
+   src="/img/gallery/thumbs/img-1.jpg"
+   data-image="/img/gallery/big/img-1.jpg"
+   data-description="Image 1 Description"
+   style="display:none">
+</a>
+
+<a href="http://unitegallery.net">
+<img alt="Image 2 Title"
+   src="/img/gallery/thumbs/img-2.jpg"
+   data-image="/img/gallery/big/img-2.jpg"
+   data-description="Image 2 Description"
+   style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Image 2 Title"
+   src="/img/gallery/thumbs/img-3.jpg"
+   data-image="/img/gallery/big/img-3.jpg"
+   data-description="Image 2 Description"
+   style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Image 2 Title"
+   src="/img/gallery/thumbs/img-4.jpg"
+   data-image="/img/gallery/big/img-4.jpg"
+   data-description="Image 2 Description"
+   style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Image 2 Title"
+   src="/img/gallery/thumbs/img-5.jpg"
+   data-image="/img/gallery/big/img-5.jpg"
+   data-description="Image 2 Description"
+   style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Image 1 Title"
+   src="/img/gallery/thumbs/img-6.jpg"
+   data-image="/img/gallery/big/img-6.jpg"
+   data-description="Image 1 Description"
+   style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Image 1 Title"
+   src="/img/gallery/thumbs/img-7.jpg"
+   data-image="/img/gallery/big/img-7.jpg"
+   data-description="Image 1 Description"
+   style="display:none">
+</a>
+<a href="http://unitegallery.net">
+<img alt="Image 1 Title"
+   src="/img/gallery/thumbs/img-8.jpg"
+   data-image="/img/gallery/big/img-8.jpg"
+   data-description="Image 1 Description"
+   style="display:none">
+</a>
+
+
+</div>
+
+<br>
+
+
+<!-- This loops through the paginated posts -->
+
+
+
+
+
+
+<!-- Display post -->
+
+<!-- Display post -->
+
+<!-- Display post -->
+
+<!-- Display post -->
+
+<!-- Display post -->
+
+
+
+
+
+<!-- Pagination links -->
+<div class="pagination">
+
+<span class="previous">Previous</span>
+
+<span class="page_number ">Page: 1 of 2</span>
+
+<a href="/gallery/page2/" class="next">Next</a>
+
+</div>
+
+<% include footer %>
+<script type='text/javascript' src='/vendors/unitegallery/js/jquery-11.0.min.js'></script>
+
+<script type='text/javascript' src='/vendors/unitegallery/js/unitegallery.min.js'></script>
+<script type='text/javascript' src='/vendors/unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+
+    jQuery("#gallery").unitegallery({
+      tiles_type:"nested",
+      tiles_nested_optimal_tile_width: 250
+    });
+
+  });
+
+</script>
